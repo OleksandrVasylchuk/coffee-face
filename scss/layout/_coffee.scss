@@ -43,16 +43,21 @@
     margin-left: 0px;
 }
 
-.coffee svg{
+.coffee__flex-svg {
     display: block;
     width: 13px;
     height: 13px;
     margin: 20px auto 4px;
     fill: #909090;
 }
+.coffee__svg {
+    display: none;
+}
 
 @media screen and (min-width: 1320px) {
-
+    .coffee{
+        position: relative;
+    }
     .coffee__title {
         margin-top: 113px;
         margin-bottom: 64px;
@@ -75,7 +80,7 @@
     margin-top: 72px;
     margin-bottom: 52px;
     }
-    .coffee svg{
+    .coffee__flex-svg {
         margin: 0px 10px 0px 433px;
     }
 
@@ -83,5 +88,26 @@
         margin-bottom: 0px;
         font-size: 14px;
         line-height: 125.5%;
+    }
+
+    .coffee__svg {
+        display: block;
+        margin: 0;
+        width: 24px;
+        height: auto;
+    }
+
+    .coffee__svg.left {
+        position: absolute;
+        top: 155px;
+        left: 10px;
+        z-index: 3;
+    }
+
+    .coffee__svg.right {
+        position: absolute;
+        top: 155px;
+        right: 10px;
+        z-index: 3;
     }
 }
