@@ -1,0 +1,234 @@
+
+
+.header-black {
+    height: 31px;
+    text-align: center;
+    background-color: var(--primary-texst-color);
+}
+
+.header-blasc__text {
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    color: var(--primary-white-color);
+}
+
+.header-mein {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+}
+
+.header-mein__menu{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.header-mein__logo {
+    width: 122px;
+    height: 12px;
+    margin-left: 69px;
+    margin-right: 59px;
+}
+
+.header-mein__item {
+    display: none;
+}
+.header__svg{
+    fill: var();
+}
+.header__svg:hover,
+.header__svg:focus{
+ fill: var(--accent-color);
+}
+
+.header__svg:nth-child(2n) {
+    margin-right: 20px;
+}
+
+.hero{
+    width: 375px;
+    display: block;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero__img{
+    display: none;
+}
+.hero__img-mobile{
+     margin-left: auto;
+     margin-right: auto;
+}
+.hero-text{
+     position: absolute;
+     width: 335px;
+     padding: 415px 20px 84px 20px;
+    left: 0;
+    top: -85px;
+    background: linear-gradient(2.76deg, #FDFAF8 11.68%, rgba(255, 255, 255, 0) 80.51%);
+}
+.hero-text__title {
+    height: 117px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 10px;
+    // transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.hero-text__paragraph {
+    margin-bottom: 30px;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   text-align: center;
+}
+
+.hero-text__button {
+    height: 54px;
+    width: 335px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--primary-white-color);
+    text-align: center;
+    background-color: var(--primary-texst-color);
+    border: none;
+}
+@media screen and (min-width: 1320px) {
+
+
+    .header-black {
+    height: 38px;
+    }
+    .header-blasc__text {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 18px; 
+    }
+
+    .header-mein {
+        margin-top: 40px;
+        width: 1320px;
+        margin-bottom: 25px;
+    }
+
+    .header-mein__menu {
+        justify-content: start;
+        display: none;
+    }
+
+    .header-mein__logo {
+        width: 180px;
+        height: 18px;
+        margin-left: 0px;
+        margin-right: 258px;
+    }
+
+    .header-mein__item {
+        display: flex;
+    }
+    .header-mein__list{
+        margin-right: 73px;
+    }
+    .header-mein__link{
+        position: relative;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--primary-texst-color);
+    }
+    
+    .header-mein__link:after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: -5%;
+        z-index: 1;
+        width: 0%;
+        height: 1px;
+        background-color: var(--accent-color);
+    }
+    .header-mein__link:hover:after,
+    .header-mein__link:focus:after {
+         transition: all 1s;
+         width: 110%;
+    }
+    .header-mein__link:hover,
+    .header-mein__link:focus {
+        color: var(--accent-color);
+    }
+    .header-mein__list:last-child{
+        margin-right: 205px;
+    }
+
+    .header__svg.mobile{
+        display: none;
+    }
+    .header__svg {
+        width: 16px;
+        height: 18.5px;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: start;
+        width: 1440px;
+    }
+    .hero__img-mobile{
+        display: none;
+    }
+    .hero__img {
+        display: block;
+        width: 926px;
+    }
+
+    .hero-text {
+        position: relative;
+        left: -60px;
+        top: 0;
+        width: 100%;
+        padding: 181px 0px 325px 0px;
+        justify-content: center;
+        background: none;
+
+    }
+
+    .hero-text__title {
+        margin-bottom: 13px;
+        font-size: 36px;
+        line-height: 140%;
+        height: 100px;
+        width: auto;
+    }
+
+    .hero-text__paragraph {
+        margin-bottom: 35px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .hero-text__button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 316px;
+        height: 70px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

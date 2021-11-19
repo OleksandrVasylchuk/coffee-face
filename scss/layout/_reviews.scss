@@ -1,0 +1,179 @@
+// .reviews{}
+.reviews__container {
+    text-align: center;
+}
+
+.reviews__title {
+    margin-top: 83px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.reviews__star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+}
+.reviews__star ul {
+    display: flex;
+    
+}
+
+.reviews__star-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 125.5%;
+    margin-right: 4px;
+    
+}
+
+.reviews__star-svg {
+    width: 14px;
+    height: 13px;
+    margin-left: 3px;
+    fill: var(--primary-texst-color);
+    // 
+}
+.reviews__star-svg.fill {
+    fill: #909090;
+}
+
+.reviews__text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.reviews__price {
+   align-items: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 150%;
+    
+}
+
+.reviews__price-old {
+    position: relative;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 14px;
+    opacity: 0.5;
+} 
+.reviews__price-old:after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -8px;
+    width: 68px;
+    height: 1px;
+    opacity: 1;
+    background-color: var(--primary-texst-color);
+}
+
+.reviews__button {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: 18px;
+    width: 335px;
+    height: 54px;
+    text-align: center;
+    color: var(--primary-white-color);
+    background-color: var(--primary-texst-color);
+
+}
+.reviews__img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 410px;
+    width: 375px;
+    background-size: 90%;
+    // transform: rotate(15deg);
+    background-repeat: no-repeat;
+    background-image: url(../../img/Group-fon.png);
+}
+
+@media screen and (min-width: 1320px) {
+    .reviews {
+        // display: flex;
+        height: 708px;
+    }
+
+    .reviews__container {
+        width: 428px;
+        margin-right: 157px;
+        float: right;
+    }
+
+    .reviews__title {
+        margin-top: 206px;
+        margin-bottom: 43px;
+        width: 442px;
+        height: 104px;
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .reviews__star {
+       align-items: normal;
+        margin-bottom: 24px;
+    }
+
+    .reviews__star-text {
+         font-size: 18px;
+         line-height: 125.5%;
+    }
+
+    .reviews__star-svg {
+        width: 17px;
+        height: 17px;
+
+    }
+
+    .reviews__text {
+        width: 428px;
+        height: 93px;
+    }
+
+    .reviews__price {
+        font-size: 30px;
+        line-height: 150%;
+    }
+
+    .reviews__price-old {}
+
+    .reviews__button {
+        margin-top: 32px;
+    }
+
+    .reviews__img {
+         margin-left: 0;
+         margin-right: 0;
+         height: 783px;
+         width: 700px;
+         margin-left: 50px;
+         margin-top: 24px;
+         background-size: 90%;
+         // transform: rotate(15deg);
+         background-repeat: no-repeat;
+         background-image: url(../../img/Group-fon.png);
+    }
+
+    .reviews__img-two {
+        padding-top: 40px;
+        padding-right: 10px;
+        // width: 687.67px;
+        height: 692.06px;
+    }
+}

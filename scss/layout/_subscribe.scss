@@ -1,0 +1,120 @@
+.subscribe{
+    // display: flex;
+    justify-content: center;
+    background: linear-gradient(76.3deg, rgba(252, 209, 194, 0.48) -41.01%, rgba(252, 209, 194, 0.284083) 45.83%, rgba(255, 255, 255, 0) 106.87%);
+    padding-top: 53px;
+    // margin-top: 238px;
+}
+
+.subscribe__title {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--primary-texst-color);
+}
+
+.subscribe__text {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--primary-texst-color);
+
+}
+
+.subscribe__input{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+
+    opacity: 0.5;
+    width: 335px;
+    height: 54px;
+}
+
+.subscribe__btn {
+    width: 335px;
+    height: 54px;
+    left: 20px;
+    top: 4968px;
+    background:  var(--primary-texst-color);
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--primary-white-color);
+    margin-top: 10px;
+}
+.subscribe__img-desktop{
+    display: none;
+}
+
+.subscribe__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29px;
+    margin-bottom: 24px;
+    width: 375px;
+
+}
+
+@media screen and (min-width: 1320px) {
+    .subscribe{
+        display: flex;
+        margin-top: 446px;
+        min-height: 568px;
+        
+    }
+    .subscribe__container{
+        padding-left: 133px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+
+    .subscribe__title {
+        margin-top: 104px;
+        font-size: 40px;
+        line-height: 150%;
+    }
+
+    .subscribe__text {
+        margin-top: 27px;
+        margin-bottom: 21px;
+        font-size: 22px;
+        line-height: 170%;
+    }
+
+    .subscribe__input {
+        margin-left: 110px;
+        width: 315px;
+        height: 70px;
+    }
+    .subscribe__input::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 22px;
+    }
+
+    .subscribe__btn {
+        width: 203px;
+        height: 70px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .subscribe__img{
+        display: none;
+    }
+    .subscribe__img-desktop {
+        display: block;
+        left: 100px;
+        height: 568px;
+    }
+}
