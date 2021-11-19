@@ -713,6 +713,7 @@ p {
   .blog-white {
     position: relative;
     top: -236px;
+    overflow: auto;
   }
   .blog__item {
     margin-right: 21px;
@@ -1268,11 +1269,14 @@ p {
 
 .testimonials__slider-human {
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonials__svg {
   width: 48px;
   height: 31.27px;
+  fill: white;
 }
 
 .testimonials__svg.right {
@@ -1283,6 +1287,8 @@ p {
 .testimonials__img {
   width: 61px;
   height: 61px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonials__name {
@@ -1295,6 +1301,60 @@ p {
   font-weight: 300;
   font-size: 14px;
   line-height: 170%;
+}
+
+.testimonials__slider button {
+  border: none;
+  background-color: transparent;
+}
+
+button.prev {
+  position: relative;
+  top: 47px;
+  left: -140px;
+}
+
+button.prev:after {
+  content: '';
+  position: absolute;
+  top: 1;
+  left: -6px;
+  background-image: url(../../img/Group261.png);
+  width: 43px;
+  height: 43px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 69%;
+}
+
+button.prev:hover:after,
+button.prev:focus:after {
+  z-index: 2;
+}
+
+button.next {
+  position: relative;
+  top: -271px;
+  left: 140px;
+}
+
+button.next:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 23px;
+  background-image: url(../../img/Group261.png);
+  width: 43px;
+  height: 43px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 69%;
+}
+
+button.next:hover:after,
+button.next:focus:after {
+  z-index: 2;
 }
 
 @media screen and (min-width: 1320px) {
@@ -1331,19 +1391,15 @@ p {
   button.prev:after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 60000px;
-    background-image: url(../../img/Group261.png);
+    top: 1;
+    left: 6px;
     width: 43px;
     height: 43px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
     z-index: -1;
+    background-size: 98%;
   }
   button.prev:hover:after,
   button.prev:focus:after {
-    position: absolute;
-    top: 0;
-    left: 6px;
     z-index: 2;
   }
   button.next {
@@ -1354,19 +1410,16 @@ p {
   button.next:after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 29000px;
-    background-image: url(../../img/Group261.png);
+    top: 1;
+    left: 29px;
     width: 43px;
     height: 43px;
     z-index: -1;
+    background-size: 98%;
   }
   button.next:hover:after,
   button.next:focus:after {
     z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 29px;
   }
   .testimonials__slider-container {
     display: flex;
