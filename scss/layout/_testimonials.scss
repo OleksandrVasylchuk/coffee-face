@@ -82,10 +82,7 @@ display: flex;
         width: 66px;
         height: 43px;
         fill: white;
-        &:hover,
-        &:focus {
-            fill: var(--accent-color);
-        }
+        
     }
 
     button.prev {
@@ -93,10 +90,47 @@ display: flex;
         top: -120px;
         left: 362px;
     }
+    button.prev:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 60000px;
+        background-image: url(../../img/Group261.png);        
+        width: 43px;
+        height: 43px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        z-index: -1;
+    }
+    button.prev:hover:after,
+    button.prev:focus:after {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        z-index: 2;
+
+    }
      button.next {
         position: relative;
         top: -120px;
         left: -80px;
+    }
+
+    button.next:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 29000px;
+        background-image: url(../../img/Group261.png);
+        width: 43px;
+        height: 43px;
+        z-index: -1;
+    }
+    button.next:hover:after,
+    button.next:focus:after {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 29px;
     }
 
     .testimonials__slider-container{
