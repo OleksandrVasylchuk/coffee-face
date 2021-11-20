@@ -107,8 +107,6 @@ p {
 }
 
 .header-mein__logo {
-  position: relative;
-  z-index: 3;
   width: 122px;
   height: 12px;
   margin-left: 69px;
@@ -120,8 +118,6 @@ p {
 }
 
 .header__svg {
-  position: relative;
-  z-index: 3;
   fill: var();
 }
 
@@ -220,7 +216,7 @@ p {
   }
   .header-mein__item {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     z-index: 3;
     display: none;
