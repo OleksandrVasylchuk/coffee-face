@@ -110,7 +110,8 @@
 
 
 @media screen and (max-width: 1220px) {
-    .header-mein__menu:hover {
+    .header-mein__menu:hover,
+    .header-mein__menu:focus {
         color: var(--accent-color);
 
     }
@@ -178,12 +179,12 @@
 
     .header-mein__item a:hover:after,
     .header-mein__item a:focus:after {
-        transition: all 1s;
+        // transition: all 1s;
         width: 110%;
     }
 
-    .header-mein:hover .header-mein__item,
-    .header-mein:focus .header-mein__item {
+    .header-mein__menu:hover~.header-mein__item,
+    .header-mein__menu:focus~.header-mein__item {
         display: block;
     }
 }
