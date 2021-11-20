@@ -89,6 +89,8 @@ p {
 }
 
 .header-mein {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -105,13 +107,21 @@ p {
 }
 
 .header-mein__logo {
+  position: relative;
+  z-index: 3;
   width: 122px;
   height: 12px;
   margin-left: 69px;
   margin-right: 59px;
 }
 
+.header-mein__item {
+  display: none;
+}
+
 .header__svg {
+  position: relative;
+  z-index: 3;
   fill: var();
 }
 
@@ -145,10 +155,9 @@ p {
 .hero-text {
   position: absolute;
   width: 335px;
-  height: 600px;
-  padding: 315px 20px 84px 20px;
+  padding: 415px 20px 84px 20px;
   left: 0;
-  top: 15px;
+  top: -85px;
   background: linear-gradient(2.76deg, #FDFAF8 11.68%, rgba(255, 255, 255, 0) 80.51%);
 }
 
@@ -185,8 +194,7 @@ p {
 }
 
 @media screen and (max-width: 1220px) {
-  .header-mein__menu:hover,
-  .header-mein__menu:focus {
+  .header-mein__menu:hover {
     color: var(--accent-color);
   }
   .header-mein__menu {
@@ -243,10 +251,11 @@ p {
   }
   .header-mein__item a:hover:after,
   .header-mein__item a:focus:after {
+    transition: all 1s;
     width: 110%;
   }
-  .header-mein__menu:hover ~ .header-mein__item,
-  .header-mein__menu:focus ~ .header-mein__item {
+  .header-mein .header-mein__menu:hover ~ .header-mein__item,
+  .header-mein .header-mein__menu:focus ~ .header-mein__item {
     display: block;
   }
 }
