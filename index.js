@@ -31,16 +31,16 @@ function showSlides(n) {
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
+    openMenyBtn: document.querySelector("[data-menu-open]"),
+    closeMenyBtn: document.querySelector("[data-menu-close]"),
+    menu: document.querySelector("[data-menu]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openMenyBtn.addEventListener("click", toggleMeny);
+  refs.closeMenyBtn.addEventListener("click", toggleMeny);
 
-  function toggleModal() {
-    document.body.classList.toggle("modal-open");
-    refs.modal.classList.toggle("is-hidden");
+  function toggleMeny() {
+    document.body.classList.toggle("menu-open");
+    refs.menu.classList.toggle("is-hidden");
   }
 })();

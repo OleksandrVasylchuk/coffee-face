@@ -36,6 +36,10 @@
     height: 13px;
     margin-left: 3px;
     fill: var(--primary-texst-color);
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
     // 
 }
 .reviews__star-svg.fill {
@@ -89,9 +93,27 @@
     width: 335px;
     height: 54px;
     text-align: center;
+    border: none;
     color: var(--primary-white-color);
     background-color: var(--primary-texst-color);
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--accent-color);
+        transition: all .35s;
+    }
 
+    &:hover:after {
+        width: 100%;
+    }
+}
+.reviews__button span{
+    position: relative;
+    z-index: 2;
 }
 .reviews__img{
     margin-left: auto;
@@ -151,7 +173,6 @@
         line-height: 150%;
     }
 
-    .reviews__price-old {}
 
     .reviews__button {
         margin-top: 32px;

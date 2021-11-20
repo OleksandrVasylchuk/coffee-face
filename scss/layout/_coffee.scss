@@ -95,6 +95,10 @@
         margin: 0;
         width: 24px;
         height: auto;
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
     }
 
     .coffee__svg.left {

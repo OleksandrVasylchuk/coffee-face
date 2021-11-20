@@ -36,14 +36,22 @@
     height: 12px;
     margin-left: 69px;
     margin-right: 59px;
+    animation-duration: 1500ms;
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
 }
 
-.header-mein__item {
-    display: none;
-}
 
 .header__svg {
     fill: var();
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
 }
 
 .header__svg:hover,
@@ -79,6 +87,7 @@
     padding: 415px 20px 84px 20px;
     left: 0;
     top: -85px;
+    z-index: 1;
     background: linear-gradient(2.76deg, #FDFAF8 11.68%, rgba(255, 255, 255, 0) 80.51%);
 }
 
@@ -103,6 +112,7 @@
 }
 
 .hero-text__button {
+    position: relative;
     height: 54px;
     width: 335px;
     font-style: normal;
@@ -113,6 +123,24 @@
     text-align: center;
     background-color: var(--primary-texst-color);
     border: none;
+     &:after {
+         position: absolute;
+         content: "";
+         top: 0;
+         left: 0;
+         width: 0;
+         height: 100%;
+         background-color: var(--accent-color);
+         transition: all .35s;
+     }
+
+     &:hover:after {
+         width: 100%;
+     }
+}
+.hero-text__button span{
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -151,19 +179,33 @@
         position: absolute;
         top: 30px;
         left: 0;
-        z-index: 3;
-        display: none;
+        z-index: 5;
+        // display: none;
         background-color: black;
         width: 375px;
-        height: 333px;
+        // height: 300px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         text-align: center;
     }
+    .header-mein__item-svg {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: var(--accent-color);
+    }
+
 
     .header-mein__item a {
         position: relative;
         display: inline-block;
         color: white;
-        padding: 20px;
+        padding: 10px;
         text-decoration: none;
 
         &:hover,
@@ -188,11 +230,21 @@
         transition: all 1s;
         width: 110%;
     }
+  
+        // display: none;
 
-    .header-mein .header-mein__menu:hover ~.header-mein__item,
-    .header-mein .header-mein__menu:focus ~.header-mein__item {
-        display: block;
-    }
+        .is-hidden {
+            visibility: visible;
+            opacity: 1;
+            display: none;
+        }
+    
+    // .header-mein .header-mein__menu:focus ~.header-mein__item{
+    //     display: block;
+    // }
+    // .header-mein .header-mein__menu:hover ~.header-mein__item {
+    //     display: block;
+    // }
 }
 @media screen and (min-width: 1320px) {
 
@@ -226,6 +278,9 @@
 
     .header-mein__item {
         display: flex;
+    }
+    .header-mein__item-svg{
+        display: none;
     }
     .header-mein__list{
         margin-right: 73px;

@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css//main.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 <body>
     <header class="header">
             <div class="header-black">
@@ -17,10 +21,13 @@
             </div>
            
 
-            <div  class="container header-mein">
-                    <span class="header-mein__menu">Menu</span>
-                   <a href="#"> <img class="header-mein__logo"src="./img/logo.png" alt="girls"></a>
-                    <ul class="header-mein__item ">
+            <nav  class="container header-mein">
+                    <span class="header-mein__menu" data-menu-open>Menu</span>
+                   <a href="#"> <img class="header-mein__logo animate__heartBeat"src="./img/logo.png" alt="girls"></a>
+                    <ul  class="header-mein__item is-hidden" data-menu>
+                        <svg data-menu-close class="header-mein__item-svg">
+                            <use xlink:href="./svg/sprite.svg#icon-cross"></use>
+                        </svg>
                         <li class="header-mein__list"><a class="header-mein__link"  href="#">Home</a></li>
                         <li class="header-mein__list"><a class="header-mein__link" href="#">Shop</a></li>
                         <li class="header-mein__list"><a class="header-mein__link" href="#">About</a></li>
@@ -35,7 +42,7 @@
                         <use xlink:href="./svg/sprite.svg#icon-Group-244"> 
                     </use>
                     </svg>
-            </div>
+            </nav>
 
          <div class="hero">      
             <img class="hero__img-mobile" src="./img/header-girl-mobile.png" alt="girl">
@@ -44,7 +51,7 @@
             <div class="hero-text">
                 <h1 class="hero-text__title">A Revolution in Antibacterial, Antiviral Facial Cleaning</h1>
                 <p class="hero-text__paragraph">Manuka honey antibacterial propertiesthat help protect and seal your skin</p>
-                <button class="hero-text__button">Shop now</button>
+                <button class="hero-text__button"><span>Shop now</span></button>
             </div>
         </div>
     </header>
@@ -56,7 +63,7 @@
                 <div class="container beauty__container">
                     <img class="beauty__img"  src="./img/beauty.png" alt="beauty">
                     <div>
-                        <img class="beauty__logo"src="./img/logo.png" alt="">
+                        <img class="beauty__logo animate__heartBeat"src="./img/logo.png" alt="">
                     <p class="beauty__text">is an innovative approach to beauty. Uncomplicated. Sophisticated. Declutter your daily skincare routine.</p>
                     </div>
                     
@@ -102,7 +109,7 @@
                         $64.99
                     </p>
 
-                    <button class="reviews__button">Buy it now</button>
+                    <button class="reviews__button"><span>Buy it now</span></button>
             </div>       
            <div>
                 <div class="reviews__img">
@@ -154,6 +161,11 @@
                             <use xlink:href="./svg/sprite.svg#icon-Group-260"></use>
                         </svg>
                     </button>
+                     <button onclick="plusSlide()" class="next">
+                        <svg class="testimonials__svg right">
+                            <use xlink:href="./svg/sprite.svg#icon-Group-260"></use>
+                        </svg>
+                    </button>
                <ul class="testimonials__slider-container">
                     <li  class="slider-contrnt">
                         <div class="testimonials__slider flex"> 
@@ -171,32 +183,28 @@
                         <div class="testimonials__slider flex"> 
                     
                         <div class="testimonials__slider-human">
-                        <img class="testimonials__img" src="./img/Ellipse 16.jpg" alt="Ellipse">
+                        <img class="testimonials__img" src="./img/Kseniya-Sobchak-02 (2).jpg" alt="Ellipse">
                         </div>
                    
                     
                     </div>
-                    <span class="testimonials__name">Olena P.</span>
-                    <p class="testimonials__text">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+                    <span class="testimonials__name">Ksenia S.</span>
+                    <p class="testimonials__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque vitae, ab nesciunt tempore sit voluptatibus magni  Cumque, tenetur.</p>
                     </li>
                      <li  class="slider-contrnt">
                         <div class="testimonials__slider flex"> 
                     
                         <div class="testimonials__slider-human">
-                        <img class="testimonials__img" src="./img/Ellipse 16.jpg" alt="Ellipse">
+                        <img class="testimonials__img" src="./img/бородач.jpg" alt="Ellipse">
                         </div>
                    
                     
                     </div>
-                    <span class="testimonials__name">Olya V.</span>
-                    <p class="testimonials__text">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+                    <span class="testimonials__name">Oleksandr B.</span>
+                    <p class="testimonials__text">Passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio vel, corrupti delectus esse alias deserunt consectetur eos mollitia error beatae quas necessitatibus reprehenderit quae nam ipsam hic non perferendis quam?.</p>
                     </li>
                </ul>
-                 <button onclick="plusSlide()" class="next">
-                        <svg class="testimonials__svg right">
-                            <use xlink:href="./svg/sprite.svg#icon-Group-260"></use>
-                        </svg>
-                    </button>
+                
             </div>
         </section>
 
@@ -242,10 +250,13 @@
 
                 <p class="subscribe__text">Subscribe to our coffeeface emails and get exclusive first access to new products, free surveys, free education and beauty tips, and live & virtual events. Unsubscribe anytime. For more information, see our privacy policy.
                 </p>
+                <form action="">
+                <label for="email">
+                    <input class="subscribe__input"  t type="email" id="email" pattern=".+@globex\.com" size="30" required placeholder="Your email">
+                 </label>
 
-                <input class="subscribe__input" type="text" placeholder="Your email">
-
-                <button class="subscribe__btn">Subscribe</button>
+                <button class="subscribe__btn" type="submit"><span>Subscribe</span></button>
+            </form>
             </div>
             <img class="subscribe__img" src="./img/subskribe-mobila.png" alt="subskribe">
             <img class="subscribe__img-desktop" src="./img/subscribe.png" alt="subskribe">
@@ -285,7 +296,7 @@
                 <div class="footer__menu">
                     <div class="footer-info">
                         <a href="#">
-                            <img class="footer-logo" src="./img/logo.png" alt="">
+                            <img class="footer-logo animate__heartBeat" src="./img/logo.png" alt="">
                         </a>
     
                         <ul class="menu-list">
