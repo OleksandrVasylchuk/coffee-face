@@ -1141,10 +1141,6 @@ p {
   color: var(--primary-texst-color);
 }
 
-.subscribe__input::placeholder {
-  padding-left: 20;
-}
-
 .subscribe__btn {
   position: relative;
   width: 335px;
